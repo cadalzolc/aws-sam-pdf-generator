@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  sam-pdf
+
+Globals:
+  Function:
+    Timeout: 300
+
+Resources:
+  PdfGeneratorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lib/
+      Handler: app.pdfGenerator
+      MemorySize: 2400
+      Timeout: 300
+      Runtime: nodejs18.x
+      Architectures:
+        - x86_64
+      Events:
+        PdfGenerator:
+          Type: Api
+          Properties:
+            Path: /pdf
+            Method: get
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        Minify: true
+        Target: "es2020"
+        Sourcemap: true
+        EntryPoints: 
+        - app.ts

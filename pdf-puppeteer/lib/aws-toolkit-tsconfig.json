@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "inlineSourceMap": true,
+        "outDir": "C:\\Workspace\\pof\\sam-pdf\\pdf-puppeteer\\lib",
+        "rootDir": ".",
+        "sourceRoot": "C:/Workspace/pof/sam-pdf/pdf-puppeteer/lib",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "node"
+        ]
+    }
+}

@@ -1,29 +1,28 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  sam-pdf
-  Sample SAM Template for sam-pdf
-  
+  pdf-html
+
 Globals:
   Function:
     Timeout: 300
 
 Resources:
-  HelloWorldFunction:
-    Type: AWS::Serverless::Function
+  PDFGeneratorFunction:
+    Type: AWS::Serverless::Function 
     Properties:
-      CodeUri: lib/
-      Handler: app.lambdaHandler
-      MemorySize: 2400
+      CodeUri: src/
+      Handler: app.pdfGenerator
+      MemorySize: 2048
       Timeout: 300
       Runtime: nodejs18.x
       Architectures:
         - x86_64
       Events:
-        HelloWorld:
+        PDFGenerator:
           Type: Api
           Properties:
-            Path: /hello
+            Path: /pdf
             Method: get
     Metadata:
       BuildMethod: esbuild

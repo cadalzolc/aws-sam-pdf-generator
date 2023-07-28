@@ -1,6 +1,10 @@
 
 #Dont upload
-.aws-sam/
-lib/node_modules/
+pdf-html/aws-sam/
+pdf-html/lib/node_modules/
+pdf-dynamic/aws-sam/
+pdf-dynamic/lib/node_modules/
+pdf-puppeteer/aws-sam/
+pdf-puppeteer/lib/node_modules/
 
 
