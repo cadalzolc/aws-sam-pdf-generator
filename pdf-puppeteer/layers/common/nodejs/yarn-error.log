@@ -1,0 +1,37 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\LAMBERT\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\ProgramData\chocolatey\bin;C:\Apps\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\Amazon\AWSCLI\bin\;C:\Users\LAMBERT\AppData\Local\Microsoft\WindowsApps;C:\Users\LAMBERT\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\LAMBERT\.dotnet\tools;C:\Apps\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Apps\Git\mingw64\bin;C:\Apps\Git\usr\bin;C:\Apps\Cmdler\vendor\bin;C:\Apps\Cmdler\bin;C:\Apps\Cmdler
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.3.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Workspace\pof\aws-sam-pdf-generator\pdf-puppeteer\nodejs\package.json: Expected double-quoted property name in JSON at position 107
+      at JSON.parse (<anonymous>)
+      at C:\Users\LAMBERT\AppData\Roaming\nvm\v20.3.1\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\LAMBERT\AppData\Roaming\nvm\v20.3.1\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\LAMBERT\AppData\Roaming\nvm\v20.3.1\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+      "name": "nodjs",
+      "version": "1.0.0",
+      "dependencies": {
+          "puppeteer": "^20.9.0"
+      },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

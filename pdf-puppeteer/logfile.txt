@@ -1,0 +1,12 @@
+START RequestId: f68f9c3f-86fc-48b9-91e1-6350a6559705 Version: $LATEST
+2023-08-01T12:43:52.906Z	f68f9c3f-86fc-48b9-91e1-6350a6559705	INFO	Error: Could not find Chrome (ver. 115.0.5790.98). This can occur if either
+ 1. you did not perform an installation before running the script (e.g. `npm install`) or
+ 2. your cache path is incorrectly configured (which is: /root/.cache/puppeteer).
+For (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.
+    at ChromeLauncher.resolveExecutablePath (/opt/nodejs/node_modules/puppeteer-core/src/node/ProductLauncher.ts:438:17)
+    at ChromeLauncher.executablePath (/opt/nodejs/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:237:19)
+    at ChromeLauncher.computeLaunchArguments (/opt/nodejs/node_modules/puppeteer-core/src/node/ChromeLauncher.ts:138:31)
+    at ChromeLauncher.launch (/opt/nodejs/node_modules/puppeteer-core/src/node/ProductLauncher.ts:102:24)
+    at Runtime.ja (/Users/LAMBERT/AppData/Local/Temp/tmpreia4wto/app.ts:12:25)
+END RequestId: f68f9c3f-86fc-48b9-91e1-6350a6559705
+REPORT RequestId: f68f9c3f-86fc-48b9-91e1-6350a6559705	Init Duration: 0.18 ms	Duration: 321.02 ms	Billed Duration: 322 ms	Memory Size: 2400 MB	Max Memory Used: 2400 MB	

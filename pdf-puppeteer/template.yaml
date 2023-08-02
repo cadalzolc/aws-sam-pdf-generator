@@ -8,6 +8,15 @@ Globals:
     Timeout: 300
 
 Resources:
+  ExternalLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: ExternalLayer
+      Description: Puppeteer Binaries
+      ContentUri: 'layers\common'
+      CompatibleRuntimes:
+        - nodejs18.x
+
   PdfGeneratorFunction:
     Type: AWS::Serverless::Function
     Properties:
@@ -18,6 +27,8 @@ Resources:
       Runtime: nodejs18.x
       Architectures:
         - x86_64
+      Layers:
+        - !Ref ExternalLayer
       Events:
         PdfGenerator:
           Type: Api
@@ -32,3 +43,5 @@ Resources:
         Sourcemap: true
         EntryPoints: 
         - app.ts
+        External:
+          - "puppeteer"

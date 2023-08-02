@@ -27,7 +27,7 @@ export class PDF {
             };
         } catch(err) {
             
-            console.log(err);
+            console.log(JSON.stringify(err));
 
             return {
                 success: false,
